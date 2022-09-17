@@ -1,0 +1,40 @@
+<!--
+    Cesar Guerrero
+    09/17/22
+    CS5610 - Fall 2022
+
+    Assignment A2: Tuiter
+-->
+
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tuiter</title>
+    </head>
+
+    <body>
+        <h2><a href = "navigation.html">Back to Navigation</a></h2>
+        <h1>Tuiter</h1>
+        <h2>Home</h2>
+        <img src="elonmuskfunny.jpeg" width="48px" height="48px"/>
+
+        <!-- We are grouping the following elements together in the form as when you hit the "Tuit" button, you are submitting all of that content together-->
+        <form id = 'tuit'>
+            <textarea cols="30" rows="5" placeholder="What's happening?"></textarea>
+            <br>
+            <select>
+                <option value="EVERYONE" selected>Everyone can reply</option>
+                <option value="FOLLOWING">People you follow</option>
+                <option value="MENTIONED">Only people you mention</option>
+            </select>
+            <hr>
+                <input type="file">
+                <input type="submit" value = "Submit">
+            <hr>
+        </form>
+
+    </body>
+
+</html>
