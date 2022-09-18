@@ -1,0 +1,40 @@
+<!--
+    Cesar Guerrero
+    09/18/22
+    CS5610 - Fall 2022
+
+    Assignment A2: Tuiter
+    NOTE: A lot of the code in here is taken from my home.html file.
+    Specifically the "Tuit Portion" of the home screen
+-->
+
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tuit</title>
+    </head>
+
+    <body>
+        <a href = "navigation.html">Back</a>
+        <h1>Tuiter</h1>
+        <h2>Tuit</h2>
+        <img src="elonmuskfunny.jpeg" width="48px" height="48px"/>
+
+        <!-- We are grouping the following elements together in the form as when you hit the "Tuit" button, you are submitting all of that content together-->
+        <form id = 'tuit'>
+            <textarea cols="50" rows="5" placeholder="What's happening?"></textarea>
+            <br>
+            <select>
+                <option value="EVERYONE" selected>Everyone can reply</option>
+                <option value="FOLLOWING">People you follow</option>
+                <option value="MENTIONED">Only people you mention</option>
+            </select>
+            <hr> <!-- Horizontal Line Break-->
+            <input type="file"/>
+            <button type="submit" form="tuit">Tuit</button> <!-- You are using this button to submit your Tuit!-->
+            <hr>
+        </form>
+    </body>
+</html>
