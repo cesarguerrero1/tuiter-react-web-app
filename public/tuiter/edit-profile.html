@@ -1,0 +1,48 @@
+<!--
+    Cesar Guerrero
+    09/18/22
+    CS5610 - Fall 2022
+
+    Assignment A2: Tuiter
+    NOTE: A few lines taken from "profile.html"
+-->
+
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Edit Tuit Profile</title>
+    </head>
+
+    <body>
+        <a href = "profile.html">Back</a>
+        <h1>Tuiter</h1>
+        <h2>Edit Profile</h2>
+
+        <a href="profile.html">Save</a> 
+        <!-- Recall that since this image has a width=100% and it not being constrained by the body, it will be on its own line
+        But for the sake of a future change just including a break anyway -->
+        <img src="defaultbanner.jpeg" width="100%" height="200px">
+        <br>
+        <input type="file" name="banner-image"/>
+        <br>
+        <!-- Images are INLINE ELEMENTS but since we set width to 100%, it forces the next inline element down-->
+        <img src="elonmuskfunny.jpeg" width="48px" height="48px"/>
+        <br>
+        <input type="file" name="profile-image"/>
+
+        <hr>
+        <label for="name-input">Name</label>
+        <br/>
+        <input type="text" id="name-input" value="WebDev" placeholder="Name"/>
+        <hr>
+
+        <label for="bio">Bio</label>
+        <br/>
+        <textarea cols="50" rows="10" id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum venenatis facilisis. Donec ultricies ac mauris id vehicula. Donec vitae ornare odio. Praesent efficitur tellus scelerisque lacinia mattis. Mauris quis tempus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus egestas nec dui at efficitur.
+        </textarea>
+
+    </body>
+    
+</html>
