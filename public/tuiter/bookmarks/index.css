@@ -56,7 +56,6 @@
     height:48px;
     width:48px;
     margin-right: 12px;
-    display: inline;
 }
 
 .wd-max-width{
@@ -95,7 +94,6 @@
 }
 
 .wd-image-container{
-    margin-top:12px;
     border-width:1px;
     border-style: solid;
     border-color: rgb(47, 51, 54);
