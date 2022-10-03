@@ -13,3 +13,138 @@
     - All classes must be prefixed with "wd-"
     - All content below is offset 16px from the left border.
 */
+
+.wd-bookmark-content-holder{
+    border-width: 1px 1px 0px 1px;
+    width:35%;
+    margin:auto;
+}
+
+.wd-bookmark-title-section{
+    padding:12px 16px;
+    border-width:0px 0px 1px 0px;
+}
+
+.wd-bookmark-title{
+    font-size:20px;
+    font-weight: bold;
+    color:white;
+    margin:0px;
+}
+
+.wd-user-name{
+    margin: 0px;
+    color:lightgray;
+    font-size: 13px;
+}
+
+.wd-bookmark-dots{
+    color: rgb(29,161,242);
+    font-size: 25px;
+    float:right;
+}
+
+.wd-bookmarked-post{
+    padding:12px 16px;
+    border-width:0px 0px 1px 0px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.wd-avatar-image{
+    border-radius: 100%;
+    height:48px;
+    width:48px;
+    margin-right: 12px;
+    display: inline;
+}
+
+.wd-max-width{
+    max-width: 506px;
+}
+
+.wd-author-information{
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-author-text{
+    margin:0px;
+    display: inline;
+}
+
+.wd-handle{
+    color:lightgray;
+    font-weight: normal;
+}
+
+.wd-dots{
+    float:right;
+}
+
+.wd-text-container{
+    margin-top:5px;
+    margin-bottom:12px;
+}
+
+.wd-post-text{
+    color:white;
+    font-size:15px;
+    margin:0px;
+}
+
+.wd-image-container{
+    margin-top:12px;
+    border-width:1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-radius: 25px;
+}
+
+.wd-content-image{
+    width:504px;
+    height:264px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-description-container{
+    padding:12px;
+}
+.wd-description-title{
+    color: white;
+    font-size:15px;
+    font-weight:bold;
+    margin:0px;
+}
+
+.wd-description-text{
+    padding-top:5px;
+    font-size: 15px;
+    color:lightgray;
+    margin: 0px;
+}
+
+.wd-icons-container{
+    margin-top:12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-icon-link{
+    color:lightgray;
+    text-decoration: none;
+}
+
+.wd-icon-spacing{
+    padding-right:12px;
+}
+
+.wd-heart-icon-link{
+    color:red;
+    text-decoration: none;
+}

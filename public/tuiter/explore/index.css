@@ -13,21 +13,10 @@
     - All classes must be prefixed with "wd-"
     - All content below is offset 16px from the left border.
 */
-
-.wd-body-styling{
-    background-color: black;
-    font-family: Helvetica;
-}
-
 .wd-main-content-holder{
     border-width: 1px 1px 0px 1px;
     margin:auto;
     width:50%;
-}
-
-.wd-border-styling{
-    border-style: solid;
-    border-color: rgb(47, 51, 54);
 }
 
 .wd-navigation-holder{
@@ -55,10 +44,6 @@
     font-size: 40px;
     float:right;
     text-decoration: none;
-}
-
-.wd-float-done{
-    clear: both;
 }
 
 .wd-buttons-container{
@@ -107,11 +92,7 @@
 
 .wd-inner-content-holder{
     border-width: 0px 0px 1px 0px;
-    padding: 16px 10px;
-}
-
-.wd-trending-float{
-    float:left;
+    padding: 10px 16px;
 }
 
 .wd-trending-posts{
@@ -126,12 +107,6 @@
 
 .wd-post-title-color{
     color: white;
-}
-
-.wd-three-dots{
-    color:white;
-    font-size: 25px;
-    float:right;
 }
 
 .wd-content-float{

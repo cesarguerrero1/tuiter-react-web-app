@@ -14,4 +14,28 @@
     - All content below is offset 16px from the left border.
 */
 
+.wd-body-styling{
+    background-color: black;
+    font-family: Helvetica;
+}
+
+.wd-border-styling{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-three-dots{
+    color:white;
+    font-size: 25px;
+    float:right;
+}
+
+.wd-float{
+    float:left;
+}
+
+.wd-float-done{
+    clear: both;
+}
+
 
