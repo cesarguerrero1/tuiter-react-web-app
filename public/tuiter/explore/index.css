@@ -8,8 +8,145 @@
 
 /*
     Notes:
-    - All classes must be prefixed with "wd-"
     - Background color is black
-    - Borders are rgb(47, 51, 54)
+    - Borders are rgb(47,51,54)
+    - All classes must be prefixed with "wd-"
     - All content below is offset 16px from the left border.
 */
+
+.wd-body-styling{
+    background-color: black;
+    font-family: Helvetica;
+}
+
+.wd-main-content-holder{
+    border-width: 1px 1px 0px 1px;
+    margin:auto;
+    width:50%;
+}
+
+.wd-border-styling{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-navigation-holder{
+    border-width: 0px 0px 1px 0px;
+    padding-top: 10px;
+}
+
+.wd-input-holder{
+    padding-left: 16px;
+    padding-right: 12px;
+}
+
+.wd-input-formatting{
+    border-radius: 36px;
+    background-color: darkgray;
+    color: white;
+    padding:10px;
+    font-size: 15px;
+    width:75%;
+    float:left;
+}
+
+.wd-gear-formatting{
+    color: rgb(29,161,242);
+    font-size: 40px;
+    float:right;
+    text-decoration: none;
+}
+
+.wd-float-done{
+    clear: both;
+}
+
+.wd-buttons-container{
+    margin-top:25px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.wd-button-box{
+    display:inline;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wd-buttons{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.wd-highlighted-button{
+    color: rgb(29,161,242);
+}
+
+.wd-normal-button{
+    color: rgb(110, 118, 125);
+}
+
+.wd-lower-line{
+    margin-top:16px;
+    display:block;
+    border-style: solid;
+    border-width:1px;
+    border-color: rgb(29,161,242);
+    background-color: rgb(29,161,242);
+    border-radius: 1px;
+    height:1px;
+}
+
+.wd-content-break{
+    background-color: rgb(30, 30, 30);
+    border-width: 1px 0px;
+    height:12px;
+}
+
+.wd-inner-content-holder{
+    border-width: 0px 0px 1px 0px;
+    padding: 16px 10px;
+}
+
+.wd-trending-float{
+    float:left;
+}
+
+.wd-trending-posts{
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    margin: 0px;
+}
+
+.wd-post-title-spacing{
+    margin:4px 0px;
+}
+
+.wd-post-title-color{
+    color: white;
+}
+
+.wd-three-dots{
+    color:white;
+    font-size: 25px;
+    float:right;
+}
+
+.wd-content-float{
+    float:left;
+    width: 75%;
+}
+
+.wd-post-author{
+    font-weight: bold;
+}
+
+.wd-post-images{
+    width:100px;
+    height:100px;
+    border-radius: 12px;
+    float: right;
+}
+
