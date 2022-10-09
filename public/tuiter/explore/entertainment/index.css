@@ -1,0 +1,123 @@
+/*
+    Cesar Guerrero
+    Creation Date: 09/25/22 
+    Latest Update: 10/8/22
+    CS5610 - Fall 2022
+
+    This file is the CSS for the entertainment tab for our explore page
+*/
+
+/*
+    Notes:
+    - Background color is black
+    - Borders are rgb(47,51,54)
+    - All classes must be prefixed with "wd-"
+    - All content below is offset 16px from the left border.
+*/
+
+.wd-body{
+    background-color: black;
+}
+.nav-link.wd-override-navlink{
+    color: lightgray;
+}
+
+.wd-active-link{
+    font-weight:bold;
+    color:white;
+}
+
+.btn.wd-override-tweet-btn{
+    background-color: rgb(29,161,242);
+    border-radius: 25px;
+    color:white;
+    padding:6px;
+}
+
+.wd-content-border{
+    border-color:rgb(47, 51, 54);
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+}
+
+.wd-input-icon{
+    position: absolute;
+    top: 18px;
+    left:25px;
+    color:gray;
+}
+
+.wd-input-formatting{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    padding: 12px 12px 12px 50px;
+    background-color: darkgray;
+    color:white;
+}
+
+.wd-gear-icon{
+    color: white;
+}
+
+.wd-nav-link-styling{
+    font-weight: bold;
+    color: rgb(110, 118, 125);
+}
+
+.wd-active-nav-link{
+    font-weight: bold;
+    color: white;
+}
+
+.wd-underline{
+    height:5px;
+    border-width: 1px;
+    background-color: rgb(29,161,242);
+    border-color: rgb(29,161,242);
+    border-radius: 1px;
+}
+
+.wd-main-image{
+    border-color:rgb(47, 51, 54);
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+}
+
+.wd-overlayed-text{
+    position: absolute;
+    left:16px;
+    bottom:10px;
+    z-index: 1;
+    color:white;
+}
+
+.wd-post-info{
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+
+}
+
+.wd-user-link{
+    color: rgb(29,161,242);
+}
+
+.wd-content-font{
+    font-size:13px !important;
+}
+
+.wd-dots-color{
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-image{
+    height:100px;
+    width:100px;
+}
+
+.wd-user-image{
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
