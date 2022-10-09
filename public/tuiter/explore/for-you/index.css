@@ -1,9 +1,10 @@
 /*
     Cesar Guerrero
-    09/26/22
+    Creation Date: 09/25/22 
+    Latest Update: 10/8/22
     CS5610 - Fall 2022
 
-    This file is the CSS for our explore page
+    This file is the CSS for the for you tab  for our explore page
 */
 
 /*
@@ -14,18 +15,16 @@
     - All content below is offset 16px from the left border.
 */
 
+.nav-link.wd-override-navlink{
+    color: black;
+}
+
 .wd-active-page{
     background-color: #0d6efd;
 }
 
 .wd-active-link{
     color:white;
-}
-
-.wd-user-image{
-    border-radius: 100%;
-    width: 48px;
-    height: 48px;
 }
 
 .btn.wd-override-btn{
@@ -57,10 +56,12 @@
     color:white;
 }
 
-.fs-6.wd-override-fs6{
+.wd-content-font{
     font-size:13px !important;
 }
 
-.nav-link.wd-override-navlink{
-    color: black;
+.wd-user-image{
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
 }
