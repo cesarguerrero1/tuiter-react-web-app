@@ -96,7 +96,6 @@
 .wd-post-info{
     color: rgb(110, 118, 125);
     font-size: 13px;
-
 }
 
 .wd-user-link{
@@ -116,8 +115,35 @@
     width:100px;
 }
 
+.wd-who-to-follow{
+    background-color: #232023;
+    border-radius: 20px;
+}
+
+.wd-follow-handles{
+    color: rgb(110, 118, 125);
+}
+
 .wd-user-image{
     border-radius: 100%;
     width: 48px;
     height: 48px;
+}
+
+.btn.wd-override-follow-btn{
+    color:black;
+    background-color: white;
+    border-radius: 25px;
+    padding: 6px;
+}
+
+.wd-show-more-link{
+    color: rgb(29,161,242);
+    text-decoration: none;
+}
+
+.wd-business-link{
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+    padding:6px;
 }
