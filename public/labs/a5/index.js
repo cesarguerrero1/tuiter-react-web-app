@@ -83,5 +83,37 @@ console.log("Ternary Conditional Operator");
 const LoggedIn = true;
 const greeting = LoggedIn ? 'Welcome!' : 'Please login';
 console.log(greeting);
+console.log('');
 
 //Lab 2.6
+console.log('Legacy ES5 function')
+function add(a, b) {
+    return a + b;
+}
+const twoPlusFour = add(2, 4);
+console.log(twoPlusFour);
+console.log('');
+
+console.log('New ES6 functions')
+const subtract = (a, b) => {
+    return a - b;
+}
+const threeMinusOne = subtract(3, 1);
+console.log(threeMinusOne);
+console.log('');
+
+console.log("Implied Return");
+const multiply = (a, b) => a * b;
+const fourTimesFive = multiply(4, 5);
+console.log(fourTimesFive);
+console.log('');
+
+console.log("Parenthesis and Parameters");
+const square = a => a * a;
+const plusOne = a => a + 1;
+const twoSquared = square(2);
+const threePlusOne = plusOne(3);
+console.log(twoSquared);
+console.log(threePlusOne);
+console.log('');
+
