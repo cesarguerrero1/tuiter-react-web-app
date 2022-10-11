@@ -316,6 +316,8 @@ const init = () => {
     }
     hideBtn.click(hideHandler);
     showBtn.click(showHandler);
+
+    //Lab 2.24
      
 }
 
