@@ -7,13 +7,18 @@
  */
 
 import TodoItem from "./TodoItem.js";
+import Todos from "./todo.js";
 
 const TodoList = () => {
     return(`
         <ul>
-            ${TodoItem('Buy Milk')}
-            ${TodoItem('Pickup the kids')}
-            ${TodoItem('Walk the doh')}
+            ${
+                Todos.map((todoItem) => {
+                    return (
+                        TodoItem(todoItem)
+                    )
+                }).join('')
+            }
         </ul>
     `)
 }
