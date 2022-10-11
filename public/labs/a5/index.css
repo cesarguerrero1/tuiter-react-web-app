@@ -1,0 +1,24 @@
+/**
+ *  Cesar Guerrero
+ *  10/10/22
+ *  Assignment A5 - Lab Section
+ */
+
+.class-0 {
+    background-color: red;
+    color: white;
+}
+
+.class-1 {
+    background-color: blue;
+    color: white;
+}
+
+.class-2 {
+    background-color: green;
+    color: yellow;
+}
+
+.im-hidden {
+    display: none;
+}

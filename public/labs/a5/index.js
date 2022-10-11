@@ -214,7 +214,71 @@ console.log(greeting1);
 loggedIn = false;
 const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
 console.log(greeting2)
+console.log('');
 
-//Using Javascropt it manipulat the DOM
+//JQuery Tasks
+const init = () => {
+    console.log('Hello world from jQuery');
+    /* do the rest of the lab work here */
+    const bindById = $('#bind-by-id'); //This is finding the tag with the following ID
+    const bindByClass = $('.bind-by-class'); //This is finding the tag(s) with the following CLASS
+    console.log('Binding to DOM');
+    console.log(bindById);
+    console.log(bindByClass);
+    console.log('');
 
+    //2.12
+    const changeStyle = $('#change-style');
+    const changeStyle2 = $('.change-style');
+    changeStyle.css('color', 'red');
+    changeStyle2.css('color', 'blue');
+
+    //2.13
+    const getIdAttr = $("#get-id-attr");
+    const id = getIdAttr.attr('id');
+    console.log(id);
+    //This first getter is getting the tag with the given ID
+    const setClassAttr = $("#set-class-attr");
+    //For the given tag we are giving it a class! 
+    setClassAttr.attr('class', 'class-0');
+
+    //2.14
+    const addClass1Example = $("#add-class-1");
+    addClass1Example.addClass('class-1');
+    const removeClass1Example = $("#remove-class-1");
+    removeClass1Example.removeClass('class-2');
+    
+    //2.15
+    const hideMe = $("#hide-me");
+    hideMe.hide();
+    const showMe = $("#show-me");
+    showMe.show();
+
+    //2.16
+    const newLineItem = $("<li>Line item 1</li>");
+    const anotherLineItem = $("<li>Line item 2</li>");
+
+    //2.17
+    const ul = $("#append-new-elements");
+    ul.append(newLineItem);
+    ul.append(anotherLineItem);
+
+    //2.18
+    const removeLi =$("#remove-this");
+    const emptyUl = $("#empty-this");
+    removeLi.remove();
+    emptyUl.empty();
+
+    //2.19
+    const changeThisText = $("#change-this-text");
+    const changeThisHtml = $("#change-this-html");
+    changeThisText.html('New text');
+    changeThisHtml.html(`
+        <li>Line item A</li>
+        <li>Line item B</li>
+        <li>Line item C</li>
+    `);
+ }
+
+ $(init);
 
