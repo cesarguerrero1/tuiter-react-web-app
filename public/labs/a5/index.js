@@ -52,7 +52,7 @@ let true4 = numberVariable === 123;
 let true5 = floatingPointNumber !== 321.432;
 let false3 = numberVariable < 100;
 let sortaTrue = '1' == 1
-let notTrue   = '1' === 1
+let notTrue = '1' === 1
 
 console.log(true1);
 console.log(false1);
@@ -67,13 +67,13 @@ console.log('');
 //Lab 2.5
 
 console.log("If else");
-if(true1){
+if (true1) {
     console.log(true);
 }
 
-if(!false1){
+if (!false1) {
     console.log("!false1");
-}else{
+} else {
     console.log("false1");
 }
 console.log('');
@@ -116,4 +116,84 @@ const threePlusOne = plusOne(3);
 console.log(twoSquared);
 console.log(threePlusOne);
 console.log('');
+
+console.log("Arrays");
+let numberArray1 = [1, 2, 3, 4, 5];
+let stringArray1 = ['string1', 'string2'];
+let variableArray1 = [
+    functionScoped,
+    blockScoped,
+    constant1,
+    numberArray1,
+    stringArray1
+];
+console.log(numberArray1);
+console.log(stringArray1);
+console.log(variableArray1);
+console.log('');
+
+const length1 = numberArray1.length;
+const index1 = numberArray1.indexOf(3);
+console.log("Array Index and Length");
+console.log(length1);
+console.log(index1);
+console.log('');
+
+
+//Adding and Removing Data to/from arrays
+//Adding new items
+numberArray1.push(6);
+stringArray1.push('string3');
+
+//Remove 1 item starting on 3rd spot
+numberArray1.splice(2, 1);
+//Remove 1 item atart on 2nd spot
+stringArray1.splice(1, 1);
+console.log("Add and Remove Data to Arrays");
+console.log(numberArray1);
+console.log(stringArray1);
+console.log('');
+
+//For Loops
+console.log("For Loops")
+for (let i = 0; i < stringArray1.length; i++) {
+    const string1 = stringArray1[i];
+    console.log(string1);
+}
+console.log('');
+
+//Map Function
+//In this case we are applying the square function to each number in the numberArray1
+const squares = numberArray1.map(square);
+//In this case we are applying a new function to each number in the numberArray1
+const cubes = numberArray1.map(a => a * a * a);
+console.log("Map Function");
+console.log(squares);
+console.log(cubes);
+console.log('');
+
+//Find Function
+const four = numberArray1.find(a => a === 4);
+const string3 = stringArray1.find(a => a === 'string3');
+console.log("Find Function");
+console.log(four);
+console.log(string3);
+console.log('');
+
+//Find Index Function
+const fourIndex = numberArray1.findIndex(a => a === 4);
+const string3Index = stringArray1.findIndex(a => a === 'string3');
+console.log("Find Index")
+console.log(fourIndex);
+console.log(string3Index);
+console.log('');
+
+//Filter Function
+const numbersGreaterThan2 = numberArray1.filter(a => a > 2);
+const evenNumbers = numberArray1.filter(a => a % 2 === 0);
+const oddNumbers = numberArray1.filter(a => a % 2 !== 0);
+console.log("Filter Function");
+console.log(numbersGreaterThan2);
+console.log(evenNumbers);
+console.log(oddNumbers);
 
