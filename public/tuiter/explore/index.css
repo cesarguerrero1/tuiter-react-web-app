@@ -14,3 +14,56 @@
     - All classes must be prefixed with "wd-"
     - All content below is offset 16px from the left border.
 */
+
+/* CSS FOR THE NAVIGATION SIDEBAR */
+.wd-navbar-styling{
+    background-color: #222;
+    border-radius: 5px;
+    border-style:solid;
+    border-width:1px;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-border-bottom{
+    border-width: 0px 0px 1px 0px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+}
+.nav-link.wd-override-navlink{
+    color: white;
+}
+
+.wd-active-page{
+    background-color: rgb(29,161,242);
+}
+
+.btn.wd-override-tweet-btn{
+    background-color: rgb(29,161,242);
+    border-radius: 25px;
+    color:white;
+    padding:6px;
+}
+
+/* CSS FOR THE WHO TO FOLLOW SIDEBAR*/
+.wd-who-to-follow{
+    background-color: #222;
+    border-radius: 5px;
+    border-style:solid;
+    border-width:1px;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-user-image{
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+.btn.wd-override-follow-btn{
+    color:white;
+    background-color: rgb(29,161,242);
+    border-radius: 25px;
+    padding: 6px;
+}
+
+

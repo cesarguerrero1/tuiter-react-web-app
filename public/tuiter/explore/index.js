@@ -5,6 +5,7 @@
  */
 
 import NavigationSidebar from "../NavigationSidebar/index.js";
+import WhoToFollowList from "../WhoToFollowList/index.js";
 
 function exploreComponent(){
     //Grab the main DIV using its ID
@@ -20,7 +21,7 @@ function exploreComponent(){
                 <h3>Explore Component</h3>
             </div>
             <div class="d-none d-lg-block col-lg-4">
-                <h3>Who To Follow List </h3>
+                ${WhoToFollowList()}
             </div>
        </div>
      
