@@ -1,10 +1,10 @@
 <!--
     Cesar Guerrero
     Creation Date: 09/25/22 
-    Latest Update: 10/8/22
+    Latest Update: 10/11/22
     CS5610 - Fall 2022
 
-    Assignment A4: Tuiter
+    Assignment A5: Tuiter
     The explore screen lists random tuits based on your history and trends
 -->
 
@@ -15,181 +15,24 @@
         <meta charset="UTF-8">
         <title>Explore</title>
 
-        <!-- Referencing Bootstrap and Fontawesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+        <!-- Referencing Bootstrap and Bootswatch -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <!-- Referencing Bootswatch -->
-        <link href="../../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet" />
-
+        <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet" />
         <!-- Recall that this is how reference a CSS file-->
         <link href="../styles.css" rel="stylesheet" />
         <link href="index.css" rel="stylesheet" />
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
     </head>
-
-    <body class="container my-2 text-dark">
-        <div class = "row">
-            <!-- A big idea of Boostrap is Mobile-First so our base sizing is for the samllest screen -->
-            <!-- Left Div -->
-            <div class="col-2 col-lg-1 col-xl-2 col-xxl-3">
-                <div class="mb-2 ">
-                    <nav class = "navbar py-0 border-start border-top border-end">
-                        <ul class = "navbar-nav w-100">
-                            <li class = "nav-item py-1 px-2 border-bottom"><i class = "fab fa-twitter fa-fw"></i></li>
-                            <li class = "nav-item py-1 px-2 border-bottom"><a class = "nav-link wd-override-navlink" href="../home.html"><i class = "fas fa-home fa-fw"></i><span class = "d-none d-xl-inline"> Home</span></a></li>
-                            <li class = "nav-item py-1 px-2 border-bottom wd-active-page"><a class = "nav-link wd-active-link" href="index.html"><i class = "fas fa-hashtag fa-fw"></i><span class = "d-none d-xl-inline"> Explore</span></a></li>
-                            <li class = "nav-item py-1 px-2 border-bottom"><a class = "nav-link wd-override-navlink" href="../notifications/index.html"><i class = "fas fa-bell fa-fw"></i><span  class = "d-none d-xl-inline"> Notifications</span></a></li>
-                            <li class = "nav-item py-1 px-2 border-bottom"><a class = "nav-link wd-override-navlink" href="../messages/index.html"><i class = "fas fa-envelope fa-fw"></i><span  class = "d-none d-xl-inline"> Messages</span></a></li>
-                            <li class = "nav-item py-1 px-2 border-bottom"><a class = "nav-link wd-override-navlink" href="../bookmarks/index.html"><i class = "fas fa-bookmark fa-fw"></i><span  class = "d-none d-xl-inline"> Bookmarks</span></a></li>
-                            <li class = "nav-item py-1 px-2 border-bottom"><a class = "nav-link wd-override-navlink" href="../lists/index.html"><i class = "fas fa-list-ul fa-fw"></i><span  class = "d-none d-xl-inline"> Lists</span></a></li>
-                            <li class = "nav-item py-1 px-2 border-bottom"><a class = "nav-link wd-override-navlink" href="../profile.html"><i class = "fas fa-user fa-fw"></i><span  class = "d-none d-xl-inline"> Profile</span></a></li>
-                            <li class = "nav-item py-1 px-2 border-bottom"><a class = "nav-link wd-override-navlink" href="#"><i class = "fas fa-ellipsis-h fa-fw"></i><span  class = "d-none d-xl-inline"> More</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <button class="w-100 btn wd-override-btn">Tweet</button>
-            </div>
-
-            <!-- Center Div-->
-            <div class="col-10 col-lg-7 col-xl-6 col-xxl-5">
-                <div class="row align-items-center justify-content-between mb-2">
-                    <div class="col-10 position-relative">
-                        <i class = "fa fa-search wd-input-icon"></i>
-                        <input class="w-100 wd-input-formatting" placeholder="Search Twitter"/>
-                    </div>
-                    <div class="col-2 text-end">
-                        <a href="explore-settings.html"><i class="fas fa-cog fa-2x"></i></a>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <ul class = "nav nav-tabs">
-                        <li class = "nav-item"><a class="nav-link active" href="for-you.html">For you</a></li>
-                        <li class = "nav-item"><a class="nav-link" href="trending.html">Trending</a></li>
-                        <li class = "nav-item"><a class="nav-link" href="news.html">News</a></li>
-                        <li class = "nav-item"><a class="nav-link" href="sports.html">Sports</a></li>
-                        <li class = "nav-item d-none d-md-block"><a class="nav-link" href="./entertainment/index.html">Entertainment</a></li>
-                    </ul>
-                </div>
-                <div class="position-relative">
-                    <img class="img-fluid" src="./images/starship-picture.jpeg"/>
-                    <h2 class="m-0 wd-overlayed-text fw-bold">SpaceX's Starship</h2>
-                </div>
-                <div class="row m-0 justify-content-center border rounded-3 border-start border-top border-end">
-                    <!-- Post 1 -->
-                    <div class = "col-12 row border-bottom p-2 align-items-center">
-                        <div class = "col-10">
-                            <p class="m-0 text-secondary">Web Development</p>
-                            <h6 class="m-0 fw-bold">ReactJS <i class="fas fa-check-circle"></i><span class="text-secondary fw-normal"> - 2h</span></h6>
-                            <p class="m-0 fw-bold wd-content-font">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
-                        </div>
-                        <div class = "col-2">
-                            <img class="img-fluid rounded-3" src="./images/react-logo.jpeg"/>
-                        </div>
-                    </div>
-                    <!-- Post 2 -->
-                    <div class = "col-12 row border-bottom p-2 align-items-center">
-                        <div class = "col-10">
-                            <h6 class="m-0 fw-bold">JavaScript <i class="fas fa-check-circle"></i><span class="text-secondary fw-normal"> - 2h</span></h6>
-                            <p class="m-0 fw-bold wd-content-font">JavaScript is a programing language that can run on browsers as well as desktops</p>
-                            <p class="m-0 text-secondary">123K Tweets</p>
-                        </div>
-                        <div class = "col-2">
-                            <img class="img-fluid rounded-3" src="./images/javascript-logo.jpeg"/>
-                        </div> 
-                    </div>
-                    <!-- Post 3 -->
-                    <div class = "col-12 row border-bottom p-2 align-items-center">
-                        <div class = "col-10">
-                            <p class="m-0 text-secondary">Web Development</p>
-                            <h6 class="m-0 fw-bold">jQuery</h6>
-                            <p class="m-0 text-secondary">123K Tweets</p>
-                        </div>
-                        <div class = "col-2">
-                            <img class="img-fluid rounded-3" src="./images/jquery-logo.jpeg"/>
-                        </div>
-                    </div>
-                    <!-- Post 4 -->
-                    <div class = "col-12 row border-bottom p-2 align-items-center">
-                        <div class = "col-10">
-                            <p class="m-0 text-secondary">Web Development</p>
-                            <h6 class="m-0 fw-bold">NodeJS <i class="fas fa-check-circle"></i><span class="text-secondary fw-normal"> - 2h</span></h6>
-                            <p class="m-0 text-secondary">123K Tweets</p>
-                        </div>
-                        <div class = "col-2">
-                            <img class="img-fluid rounded-3" src="./images/node-logo.jpeg"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- When screen width < 992px hide the right column-->
-            <!-- Right Div-->
-            <div class="col-lg-4 d-none d-lg-block">
-                <div class = "row m-0 justify-content-center border-start border-top border-end">
-                    <div class="col-12 row border-bottom py-2">
-                        <h6 class="fw-bold m-0">Who to follow</h6>
-                    </div>
-                    <div class="col-12 row align-items-center border-bottom py-2">
-                        <div class = "col-2">
-                            <img class = "wd-user-image" src="./images/java-logo.jpeg"/>
-                        </div>
-                        <div class = "col-7 pe-0">
-                            <h6 class="m-0 fw-bold">Java <i class="fas fa-check-circle"></i></h6>
-                            <p class="m-0">@Java</p>
-                        </div>
-                        <div class = "col-3 px-0">
-                            <button class="btn wd-override-btn w-100">Follow</button>
-                        </div>
-                    </div>
-                    <div class="col-12 row align-items-center border-bottom py-2">
-                        <div class = "col-2">
-                            <img class = "wd-user-image" src="./images/relativity-space-logo.jpeg"/>
-                        </div>
-                        <div class = "col-7 pe-0">
-                            <h6 class="m-0 fw-bold">Relativity Space <i class="fas fa-check-circle"></i></h6>
-                            <p class="m-0">@relativityspace</p>
-                        </div>
-                        <div class = "col-3 px-0">
-                            <button class="btn wd-override-btn w-100">Follow</button>
-                        </div>
-                    </div>
-                    <div class="col-12 row align-items-center border-bottom py-2">
-                        <div class = "col-2">
-                            <img class = "wd-user-image" src="./images/virgin-galactic-logo.jpeg"/>
-                        </div>
-                        <div class = "col-7 pe-0">
-                            <h6 class="m-0 fw-bold">Virgin Galactic <i class="fas fa-check-circle"></i></h6>
-                            <p class="m-0">@virgingalactic</p>
-                        </div>
-                        <div class = "col-3 px-0">
-                            <button class="btn wd-override-btn w-100">Follow</button>
-                        </div>
-                    </div>
-                    <div class="col-12 row align-items-center border-bottom py-2">
-                        <div class = "col-2">
-                            <img class = "wd-user-image" src="./images/nasa-logo.jpeg"/>
-                        </div>
-                        <div class = "col-7 pe-0">
-                            <h6 class="m-0 fw-bold">NASA <i class="fas fa-check-circle"></i></h6>
-                            <p class="m-0">@NASA</p>
-                        </div>
-                        <div class = "col-3 px-0">
-                            <button class="btn wd-override-btn w-100">Follow</button>
-                        </div>
-                    </div>
-                    <div class="col-12 row align-items-center border-bottom py-2">
-                        <div class = "col-2">
-                            <img class = "wd-user-image"  src="./images/tesla-logo.jpeg"/>
-                        </div>
-                        <div class = "col-7 pe-0">
-                            <h6 class="m-0 fw-bold">Tesla <i class="fas fa-check-circle"></i></h6>
-                            <p class="m-0">@Tesla</p>
-                        </div>
-                        <div class = "col-3 px-0">
-                            <button class="btn wd-override-btn w-100">Follow</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <body>
+        <!-- We will be handling all content using JAVASCRIPT! -->
+        <div class="container" id="wd-explore"></div>
+        <script src="index.js" type="module"></script>
     </body>
+
 </html>
