@@ -7,7 +7,8 @@
 export default [
     {
         avatarIcon: 'java.jpeg',
-        userName: 'Java', handle: 'Java',
+        userName: 'Java',
+        handle: 'Java',
     },
     {
         avatarIcon: 'relativity.jpeg',
@@ -21,10 +22,12 @@ export default [
     },
     {
         avatarIcon: 'nasa.jpeg',
-        userName: 'NASA', handle: 'NASA',
+        userName: 'NASA',
+        handle: 'NASA',
     },
     {
         avatarIcon: 'tesla.jpeg',
-        userName: 'Tesla', handle: 'Tesla',
+        userName: 'Tesla',
+        handle: 'Tesla',
     },
 ];

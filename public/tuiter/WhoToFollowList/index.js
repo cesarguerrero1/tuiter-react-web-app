@@ -11,7 +11,7 @@ import WhoArray from "./who.js"
 function WhoToFollowList(){
     return(`
     <div class = "row m-0 justify-content-center wd-who-to-follow">
-        <div class="col-12 row px-2 py-3 wd-border-bottom">
+        <div class="col-12 row px-2 py-2 wd-border-bottom">
             <h6 class="fw-bold m-0">Who to follow</h6>
         </div>
         ${WhoArray.map((entry) => {

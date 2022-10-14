@@ -44,6 +44,57 @@
     padding:6px;
 }
 
+/* CSS FOR THE CENTER CONTENT*/
+.wd-input-icon{
+    position: absolute;
+    top: 10px;
+    left:25px;
+    color:gray;
+}
+
+.wd-input-formatting{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    padding: 6px 12px 6px 50px;
+    background-color: white;
+    color: black;
+}
+
+.wd-gear-icon{
+    color: rgb(29,161,242);
+}
+
+.wd-overlayed-text{
+    position: absolute;
+    left:16px;
+    bottom:10px;
+    z-index: 1;
+}
+
+.wd-overlayed-text-color{
+    color:#222;
+}
+
+.wd-post-container{
+    background-color: #222;
+    border-width: 1px 1px 0px 1px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+    border-radius: 5px;
+}
+
+.wd-post-info{
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-image{
+    height:100px;
+    width:100px;
+}
+
+
 /* CSS FOR THE WHO TO FOLLOW SIDEBAR*/
 .wd-who-to-follow{
     background-color: #222;

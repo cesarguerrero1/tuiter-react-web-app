@@ -236,6 +236,7 @@ const init = () => {
     //2.13
     const getIdAttr = $("#get-id-attr");
     const id = getIdAttr.attr('id');
+    console.log("Get and Set Attributes");
     console.log(id);
     //This first getter is getting the tag with the given ID
     const setClassAttr = $("#set-class-attr");
@@ -316,8 +317,6 @@ const init = () => {
     }
     hideBtn.click(hideHandler);
     showBtn.click(showHandler);
-
-    //Lab 2.24
      
 }
 
