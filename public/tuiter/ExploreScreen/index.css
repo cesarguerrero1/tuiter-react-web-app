@@ -15,35 +15,6 @@
     - All content below is offset 16px from the left border.
 */
 
-/* CSS FOR THE NAVIGATION SIDEBAR */
-.wd-navbar-styling{
-    background-color: #222;
-    border-radius: 5px;
-    border-style:solid;
-    border-width:1px;
-    border-color: rgb(47, 51, 54);
-}
-
-.wd-border-bottom{
-    border-width: 0px 0px 1px 0px;
-    border-style:solid;
-    border-color: rgb(47, 51, 54);
-}
-.nav-link.wd-override-navlink{
-    color: white;
-}
-
-.wd-active-page{
-    background-color: rgb(29,161,242);
-}
-
-.btn.wd-override-tweet-btn{
-    background-color: rgb(29,161,242);
-    border-radius: 25px;
-    color:white;
-    padding:6px;
-}
-
 /* CSS FOR THE CENTER CONTENT*/
 .wd-input-icon{
     position: absolute;
@@ -77,23 +48,6 @@
     color:#222;
 }
 
-.wd-post-container{
-    background-color: #222;
-    border-width: 1px 1px 0px 1px;
-    border-style:solid;
-    border-color: rgb(47, 51, 54);
-    border-radius: 5px;
-}
-
-.wd-post-info{
-    color: rgb(110, 118, 125);
-}
-
-.wd-post-image{
-    height:100px;
-    width:100px;
-}
-
 
 /* CSS FOR THE WHO TO FOLLOW SIDEBAR*/
 .wd-who-to-follow{
@@ -102,12 +56,6 @@
     border-style:solid;
     border-width:1px;
     border-color: rgb(47, 51, 54);
-}
-
-.wd-user-image{
-    border-radius: 100%;
-    width: 48px;
-    height: 48px;
 }
 
 .btn.wd-override-follow-btn{
