@@ -39,7 +39,6 @@
 }
 
 /* CSS FOR POST SUMMARY LIST COMPONENT */
-
 .wd-post-container{
     background-color: #222;
     border-width: 1px 1px 0px 1px;
@@ -54,6 +53,11 @@
 }
 
 /* CSS FOR POST LIST COMPONENT */
+.wd-post-list-container{
+    border-width: 0px 1px 0px 1px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+}
 .wd-content-container{
     border-width: 1px;
     border-radius: 25px;

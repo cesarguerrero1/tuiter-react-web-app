@@ -14,8 +14,8 @@ function imageContent(include, post){
             </div>
             <div class="p-3">
                 <h6 class="mb-1 fw-bold">${post.contentTitle}</h6>
-                <p class="my-0">${post.contentPreview}</p>
-                <p class="my-0"><i class='fas fa-link fa-fw'></i> ${post.contentLink}</p>
+                <p class="my-0 wd-info-color">${post.contentPreview}</p>
+                <p class="my-0 wd-info-color"><i class='fas fa-link fa-fw'></i> ${post.contentLink}</p>
             </div>
         </div>
         `)
@@ -48,13 +48,13 @@ function PostListItem(post){
                 ${imageContent((post.contentTitle != '' ? true : false), post)}
                 <div class="col-12 row my-2">
                     <div class="col-3 wd-info-color">
-                        <i class = "far fa-comment fa-fw"></i><span>${post.commentCount}</span>
+                        <i class = "far fa-comment fa-fw me-2"></i><span>${post.commentCount}</span>
                     </div>
                     <div class="col-3 wd-info-color">
-                        <i class = "fas fa-retweet fa-fw"></i><span>${post.retweetCount}</span>
+                        <i class = "fas fa-retweet fa-fw me-2"></i><span>${post.retweetCount}</span>
                     </div>
                     <div class="col-3 wd-info-color">
-                        <i class = "far fa-heart fa-fw"></i><span>${post.likeCount}</span>
+                        <i class = "far fa-heart fa-fw me-2"></i><span>${post.likeCount}</span>
                     </div>
                     <div class="col-3 wd-info-color">
                         <i class = "fas fa-share fa-fw"></i>
