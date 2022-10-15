@@ -24,7 +24,6 @@ function exploreComponent(){
                 ${WhoToFollowList()}
             </div>
        </div>
-     
     `)
 }
 

@@ -38,25 +38,25 @@ function PostListItem(post){
             <div class="col-10 row m-0">
                 <div class="col-12 row m-0 p-0">
                     <div class="col-11 p-0">
-                        <h6 class="my-1 fw-bold">${post.userName} <i class="fas fa-check-circle"></i><span class="wd-post-info fw-normal"> ${post.userHandle} · ${post.time}</span></h6>
+                        <h6 class="my-1 fw-bold">${post.userName} <i class="fas fa-check-circle"></i><span class="wd-info-color fw-normal"> ${post.userHandle} · ${post.time}</span></h6>
                         <p class="m-0">${post.tweet}</p>
                     </div>
                     <div class="col-1 text-end p-0">
-                        <i class="fas fa-ellipsis-h fa-fw wd-post-info"></i>
+                        <i class="fas fa-ellipsis-h fa-fw wd-info-color"></i>
                     </div>
                 </div>
                 ${imageContent((post.contentTitle != '' ? true : false), post)}
                 <div class="col-12 row my-2">
-                    <div class="col-3 wd-post-info">
+                    <div class="col-3 wd-info-color">
                         <i class = "far fa-comment fa-fw"></i><span>${post.commentCount}</span>
                     </div>
-                    <div class="col-3 wd-post-info">
+                    <div class="col-3 wd-info-color">
                         <i class = "fas fa-retweet fa-fw"></i><span>${post.retweetCount}</span>
                     </div>
-                    <div class="col-3 wd-post-info">
+                    <div class="col-3 wd-info-color">
                         <i class = "far fa-heart fa-fw"></i><span>${post.likeCount}</span>
                     </div>
-                    <div class="col-3 wd-post-info">
+                    <div class="col-3 wd-info-color">
                         <i class = "fas fa-share fa-fw"></i>
                     </div>
                 </div>

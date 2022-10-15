@@ -14,15 +14,29 @@
     - All content below is offset 16px from the left border.
 */
 
+.wd-body-styling{
+    background-color: black;
+    font-family: Helvetica;
+}
+
 .wd-bookmark-content-holder{
     border-width: 1px 1px 0px 1px;
     width:600px;
     margin:auto;
 }
 
+.wd-border-styling{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
 .wd-bookmark-title-section{
     padding:12px 16px;
     border-width:0px 0px 1px 0px;
+}
+
+.wd-float{
+    float: left;
 }
 
 .wd-bookmark-title{
@@ -42,6 +56,10 @@
     color: rgb(29,161,242);
     font-size: 25px;
     float:right;
+}
+
+.wd-float-done{
+    clear: both;
 }
 
 .wd-bookmarked-post{
@@ -133,13 +151,13 @@
     justify-content: space-between;
 }
 
+.wd-icon-spacing{
+    padding-right:12px;
+}
+
 .wd-icon-link{
     color:lightgray;
     text-decoration: none;
-}
-
-.wd-icon-spacing{
-    padding-right:12px;
 }
 
 .wd-heart-icon-link{

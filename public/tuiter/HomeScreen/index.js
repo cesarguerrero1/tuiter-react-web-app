@@ -17,7 +17,7 @@ function homeComponent(){
             <div class="col-2 col-md-2 col-lg-1 col-xl-2">
                 ${NavigationSidebar("home")}
             </div>
-            <div class="col-10 col-lg-7 col-xl-6 wd-main-post-container">
+            <div class="col-10 col-lg-7 col-xl-6">
                 ${PostList()}
             </div>
             <div class="d-none d-lg-block col-lg-4">
