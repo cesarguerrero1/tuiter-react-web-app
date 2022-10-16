@@ -13,6 +13,7 @@ import reportWebVitals from './reportWebVitals';
 
 //Import Bootstrap and FontAwesome via our Package Manager
 import "bootstrap/dist/css/bootstrap.min.css"
+import "bootswatch/dist/cyborg/bootstrap.min.css"
 import 'fontawesome-free/css/all.min.css'
 
 //This is basic Javascript manipulation of the DOM

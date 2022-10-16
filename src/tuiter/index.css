@@ -1,0 +1,100 @@
+/*
+    Cesar Guerrero
+    10/16/22
+    CS5610 - Fall 2022
+
+    Assignment A6 - React
+*/
+
+/* CSS FOR THE NAVIGATION SIDEBAR */
+.wd-navbar-styling{
+    background-color: #222;
+    border-radius: 5px;
+    border-style:solid;
+    border-width:1px;
+    border-color: rgb(47, 51, 54);
+}
+
+.nav-link.wd-override-navlink{
+    color: white;
+}
+
+.wd-active-page{
+    background-color: rgb(29,161,242);
+}
+
+.btn.wd-override-tweet-btn{
+    background-color: rgb(29,161,242);
+    border-radius: 25px;
+    color:white;
+    padding:6px;
+}
+
+/* CSS FOR POST SUMMARY LIST COMPONENT */
+.wd-post-container{
+    background-color: #222;
+    border-width: 1px 1px 0px 1px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+    border-radius: 5px;
+}
+
+.wd-post-image{
+    height: 75px;
+    width: 75px;
+}
+
+/* CSS FOR POST LIST COMPONENT */
+.wd-post-list-container{
+    border-width: 0px 1px 0px 1px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+}
+.wd-content-container{
+    border-width: 1px;
+    border-radius: 25px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-content-image{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.wd-no-content-image{
+    border-radius: 25px;
+}
+
+/* CSS FOR THE WHO TO FOLLOW COMPONENT*/
+.wd-who-to-follow{
+    background-color: #222;
+    border-radius: 5px;
+    border-style:solid;
+    border-width:1px;
+    border-color: rgb(47, 51, 54);
+}
+
+.btn.wd-override-follow-btn{
+    color:white;
+    background-color: rgb(29,161,242);
+    border-radius: 25px;
+    padding: 6px;
+}
+
+/* Useful everywhere */
+.wd-user-image{
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-border-bottom{
+    border-width: 0px 0px 1px 0px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-info-color{
+    color: rgb(110, 118, 125);
+}
