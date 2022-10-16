@@ -6,13 +6,16 @@
     Assignment A6 - React
 */
 
-import {Link} from "react-router-dom";
+//Importing other JSX Files
 import Classes from "./classes/index.js";
+import Styles from "./styles/index.js";
 
 function Assignment6() {
     return (
         <div>
             <h1>Assignment 6</h1>
+            <Styles/>
+            <br/>
             <Classes/>
         </div>
     );
