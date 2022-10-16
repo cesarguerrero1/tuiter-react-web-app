@@ -10,6 +10,7 @@
 import Classes from "./classes/index.js";
 import ConditionalOutput from "./conditional-output/index.js";
 import Styles from "./styles/index.js";
+import TodoList from "./todo/todo-list.js";
 
 function Assignment6() {
     return (
@@ -19,6 +20,8 @@ function Assignment6() {
             <Styles/>
             <br/>
             <Classes/>
+            <br/>
+            <TodoList />
         </div>
     );
 }
