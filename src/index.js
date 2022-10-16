@@ -1,10 +1,24 @@
+/*
+  Cesar Guerrero
+  10/15/22
+  CS5610
+
+  Assignment 6: React
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//Import Bootstrap and FontAwesome via our Package Manager
+import "bootstrap/dist/css/bootstrap.min.css"
+import 'fontawesome-free/css/all.min.css'
+
+//This is basic Javascript manipulation of the DOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+//Inject our HTML (From our JS File) into the DOM
 root.render(
   <React.StrictMode>
     <App />
