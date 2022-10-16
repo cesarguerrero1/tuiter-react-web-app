@@ -1,0 +1,31 @@
+/*
+    Cesar Guerrero
+    10/16/22
+    CS5610 - Fall 2022
+
+    Assignment A6 - React
+*/
+
+.wd-bg-yellow {
+    background-color: lightyellow;
+}
+
+.wd-bg-blue {
+    background-color: lightblue;
+}
+
+.wd-bg-red {
+    background-color: lightcoral;
+}
+
+.wd-bg-green{
+    background-color: lightgreen;
+}
+
+.wd-fg-black {
+    color: black;
+}
+
+.wd-padding-10px {
+    padding: 10px
+}
