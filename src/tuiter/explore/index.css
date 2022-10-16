@@ -1,0 +1,48 @@
+/*
+  Cesar Guerrero
+  10/15/22
+  CS5610
+
+  Assignment 6: React
+*/
+
+/*
+    Notes:
+    - Background color is black
+    - Borders are rgb(47,51,54)
+    - All classes must be prefixed with "wd-"
+    - All content below is offset 16px from the left border.
+*/
+
+/* CSS FOR THE CENTER CONTENT*/
+.wd-input-icon{
+    position: absolute;
+    top: 10px;
+    left:25px;
+    color:gray;
+}
+
+.wd-input-formatting{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    padding: 6px 12px 6px 50px;
+    background-color: white;
+    color: black;
+}
+
+.wd-gear-icon{
+    color: rgb(29,161,242);
+}
+
+.wd-overlayed-text{
+    position: absolute;
+    left:16px;
+    bottom:10px;
+    z-index: 1;
+}
+
+.wd-overlayed-text-color{
+    color:#222;
+}

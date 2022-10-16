@@ -23,7 +23,7 @@ function ExploreComponent(){
                 <li class = "nav-item"><a class="nav-link px-3" href="trending.html">Trending</a></li>
                 <li class = "nav-item"><a class="nav-link px-3" href="news.html">News</a></li>
                 <li class = "nav-item"><a class="nav-link px-3" href="sports.html">Sports</a></li>
-                <li class = "nav-item d-none d-md-block" "><a class="nav-link px-3" href="entertainment.html">Entertainment</a></li>
+                <li class = "nav-item d-none d-md-block"><a class="nav-link px-3" href="entertainment.html">Entertainment</a></li>
             </ul>
         </div>
         <div class="my-2 position-relative">

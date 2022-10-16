@@ -11,7 +11,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-//Import Bootstrap and FontAwesome via our Package Manager
+//Import Bootstrap, Bootswatch, and FontAwesome via our Package Manager
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootswatch/dist/cyborg/bootstrap.min.css"
 import 'fontawesome-free/css/all.min.css'
