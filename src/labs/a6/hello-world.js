@@ -6,9 +6,15 @@
     Assignment A6 - React
 */
 
+import { Link } from "react-router-dom";
+import Nav from "../../nav.js"
+
 function HelloWorld() {
     return (
-        <h1>Hello World!</h1>
+        <div>
+            <Nav/>
+            <h1>Hello World!</h1>
+        </div>
     );
 };
 

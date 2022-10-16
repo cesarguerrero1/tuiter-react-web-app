@@ -6,9 +6,13 @@
     Assignment A6 - React
 */
 
+import {Link} from "react-router-dom";
+import Nav from "../nav.js";
+
 function Tuiter() {
     return (
         <div>
+            <Nav/>
             <h1>Tuiter</h1>
         </div>
     );

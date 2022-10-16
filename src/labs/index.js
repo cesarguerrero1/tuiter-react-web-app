@@ -7,11 +7,13 @@
 */
 
 import Assignment6 from "./a6/index.js";
+import Nav from "../nav.js"
 
 //Since this is react you can just write raw HTML!!!
 function Labs(){
     return(
         <div>
+            <Nav/>
             <Assignment6/>
         </div>
     )
