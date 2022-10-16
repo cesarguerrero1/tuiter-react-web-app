@@ -12,7 +12,7 @@ function imageContent(include, post){
         return(
             <div className="col-12 wd-content-container p-0 mt-3">
                 <div>
-                    <img className="img-fluid wd-border-bottom wd-content-image" src={`../images/${post.image} `}/>
+                    <img className="img-fluid wd-border-bottom wd-content-image" alt="Associated with tweet goes here" src={`../images/${post.image} `}/>
                 </div>
                 <div className="p-3">
                     <h6 className="mb-1 fw-bold">{post.contentTitle}</h6>
@@ -24,7 +24,7 @@ function imageContent(include, post){
     }else{
         return(
             <div className="col-12 wd-content-container p-0 mt-3">
-                <img className="img-fluid wd-no-content-image" src={`../images/${post.image} `}/>
+                <img className="img-fluid wd-no-content-image" alt="Associated with tweet goes here" src={`../images/${post.image} `}/>
             </div>
         )
     }
@@ -34,7 +34,7 @@ function PostListItem({post = {}}){
     return(
         <div className = "row mt-2 wd-border-bottom">
             <div className="col text-end">
-                <img className="wd-user-image" src={`../images/${post.userImage}`}/>
+                <img className="wd-user-image" alt="User" src={`../images/${post.userImage}`}/>
             </div>
             <div className="col-10 row m-0">
                 <div className="col-12 row m-0 p-0">

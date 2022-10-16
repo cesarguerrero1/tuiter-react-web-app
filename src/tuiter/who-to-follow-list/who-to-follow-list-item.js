@@ -11,7 +11,7 @@ function WhoToFollowListItem({who = {}}){
     return(
         <div class="col-12 row align-items-center py-2">
             <div class = "col-2">
-                <img class = "wd-user-image" src={`../images/${who.avatarIcon}`}/>
+                <img class = "wd-user-image" alt="Other User" src={`../images/${who.avatarIcon}`}/>
             </div>
             <div class = "col-7 pe-0">
                 <h6 class="m-0 fw-bold">{who.userName} <i class="fas fa-check-circle"></i></h6>

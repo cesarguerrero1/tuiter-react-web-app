@@ -32,7 +32,7 @@ function ExploreComponent() {
                 </ul>
             </div>
             <div className="my-2 position-relative">
-                <img className="img-fluid wd-main-image" src="../images/starship.jpeg" />
+                <img className="img-fluid wd-main-image" alt="Main" src="../images/starship.jpeg" />
                 <div className="wd-overlayed-text">
                     <h3 className="m-0 fw-bold wd-overlayed-text-color">SpaceX's Starship</h3>
                 </div>

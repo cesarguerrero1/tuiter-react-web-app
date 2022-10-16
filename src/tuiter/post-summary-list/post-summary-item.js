@@ -15,7 +15,7 @@ function PostSummaryItem({post = {}}){
                 <h6 className="fw-bold">{post.title}</h6>
             </div>
             <div className = "col-3 text-end">
-                <img className="wd-post-image rounded-3" src={`../images/${post.image}`}/>
+                <img className="wd-post-image rounded-3" alt="Preview" src={`../images/${post.image}`}/>
             </div>
         </div>
     )

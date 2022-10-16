@@ -31,7 +31,7 @@ function Tuiter() {
             </div>
             <div className="d-none d-lg-block col-lg-4">
             <Routes>
-                    <Route index element={<HomeComponent/>}/>
+                    <Route index element={<PostSummaryList/>}/>
                     <Route path="/home" element={<PostSummaryList/>}/>
                     <Route path="/explore" element={<WhoToFollowList/>}/>
             </Routes>
