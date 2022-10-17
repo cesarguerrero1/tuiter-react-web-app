@@ -17,6 +17,7 @@ function WhoToFollowList(){
                 <h6 class="fw-bold m-0">Who to follow</h6>
             </div>
             {WhoArray.map((entry) => {
+                //entry is a JSON object
                 return (<WhoToFollowListItem key={entry._id} who={entry}/>);
             })}
         </div>

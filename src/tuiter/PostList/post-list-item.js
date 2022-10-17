@@ -32,7 +32,7 @@ function imageContent(include, post){
 
 function PostListItem({post = {}}){
     return(
-        <div className = "row mt-2 wd-border-bottom">
+        <div className = "row mt-2 mx-0 wd-border-bottom">
             <div className="col text-end">
                 <img className="wd-user-image" alt="User" src={`../images/${post.userImage}`}/>
             </div>

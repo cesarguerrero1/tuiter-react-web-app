@@ -46,7 +46,7 @@
 
 /* CSS FOR POST LIST COMPONENT */
 .wd-post-list-container{
-    border-width: 0px 1px 0px 1px;
+    border-width: 1px 1px 0px 1px;
     border-style:solid;
     border-color: rgb(47, 51, 54);
 }

@@ -12,7 +12,7 @@ import PostListItem from "./post-list-item.js";
 
 function PostList(){
     return(
-        <div>
+        <div className = "wd-post-list-container">
             {postArray.map((post) => {
                 return(<PostListItem key={post._id} post={post} />);
             })}
