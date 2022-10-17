@@ -9,8 +9,10 @@
 import './index.css';
 
 function Classes() {
+    //Dynamic CSS
     const color = 'blue';
     const dangerous = false;
+
     return (
         <div>
             <h2>Classes</h2>

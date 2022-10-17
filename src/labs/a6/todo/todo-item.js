@@ -5,10 +5,8 @@
 
     Assignment A6 - React
 */
-
-const TodoItem = ({
-    todo
-}) => {
+//This function is expecting a JSON object
+const TodoItem = ({todo}) => {
     return (
         <li>
             <input type="checkbox" defaultChecked={todo.done} />

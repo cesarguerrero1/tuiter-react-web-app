@@ -30,7 +30,7 @@ const Styles = () => {
             <h1>Styles</h1>
             <div style={{
                 "backgroundColor": "lightyellow",
-                "color": "black", padding: "10px"
+                "color": "black", "padding": "10px"
             }}>
                 Yellow background
             </div>

@@ -5,7 +5,7 @@
 
     Assignment A6 - React
 */
-
+import React from "react";
 import ConditionalOutputIfElse from "./conditional-output-if-else.js";
 import ConditionalOutputInline from "./conditional-output-inline.js";
 
@@ -16,7 +16,6 @@ function ConditionalOutput(){
         <>
             <ConditionalOutputIfElse />
             <ConditionalOutputInline />
-    
         </>
     );
 };

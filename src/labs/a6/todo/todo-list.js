@@ -11,6 +11,7 @@ import todos from "./todos.json";
 
 const TodoList = () => {
     return (
+        //We use {} if it is NOT in a string. Otherwise we use {`${}`}
         <>
             <h3>Todo List</h3>
             <ul>
