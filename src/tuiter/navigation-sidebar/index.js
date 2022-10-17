@@ -44,7 +44,7 @@ function NavigationSidebar(){
                     </ul>
                 </nav>
             </div>
-            <button class="btn wd-override-tweet-btn w-100">Tweet</button>
+            <button className="btn wd-override-tweet-btn w-100">Tweet</button>
         </div>
     )
 }

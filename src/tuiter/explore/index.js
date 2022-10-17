@@ -7,6 +7,7 @@
 */
 
 import React from "react";
+import {Link} from "react-router-dom"; //This is JSX way of saying <a></a>
 import PostSummaryList from "../post-summary-list/index.js";
 import "./index.css";
 
@@ -19,16 +20,16 @@ function ExploreComponent() {
                     <input className="w-100 wd-input-formatting" placeholder="Search Twitter"/>
                 </div>
                 <div className="col-1 text-end">
-                    <a href="explore-settings.html"><i className="fas fa-cog fa-2x wd-gear-icon"></i></a>
+                    <Link to="./explore-settings.html"><i className="fas fa-cog fa-2x wd-gear-icon"></i></Link>
                 </div>
             </div>
             <div>
                 <ul className = "nav nav-tabs">
-                    <li className = "nav-item"><a className="nav-link px-3 active" href="for-you.html">For you</a></li>
-                    <li className = "nav-item"><a className="nav-link px-3" href="trending.html">Trending</a></li>
-                    <li className = "nav-item"><a className="nav-link px-3" href="news.html">News</a></li>
-                    <li className = "nav-item"><a className="nav-link px-3" href="sports.html">Sports</a></li>
-                    <li className = "nav-item d-none d-md-block"><a className="nav-link px-3" href="entertainment.html">Entertainment</a></li>
+                    <li className = "nav-item"><Link to="./for-you.html" className="nav-link px-3 active">For you</Link></li>
+                    <li className = "nav-item"><Link to="./trending.html" className="nav-link px-3" >Trending</Link></li>
+                    <li className = "nav-item"><Link to="./news.html" className="nav-link px-3" >News</Link></li>
+                    <li className = "nav-item"><Link to="./sports.html" className="nav-link px-3">Sports</Link></li>
+                    <li className = "nav-item d-none d-md-block"><Link to="./entertainment.html" className="nav-link px-3">Entertainment</Link></li>
                 </ul>
             </div>
             <div className="my-2 position-relative">

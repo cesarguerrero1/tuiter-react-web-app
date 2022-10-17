@@ -37,7 +37,7 @@ function Tuiter() {
                 <Routes>
                         <Route index element={<PostSummaryList/>}/>
                         <Route path="/home" element={<PostSummaryList/>}/>
-                        <Route path="/explore" element={<WhoToFollowList/>}/>
+                        <Route path="/explore/*" element={<WhoToFollowList/>}/>
                 </Routes>
             </div>
         </div>
