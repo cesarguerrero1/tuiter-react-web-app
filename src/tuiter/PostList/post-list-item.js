@@ -17,7 +17,7 @@ function imageContent(include, post){
                 <div className="p-3">
                     <h6 className="mb-1 fw-bold">{post.contentTitle}</h6>
                     <p className="my-0 wd-info-color">{post.contentPreview}</p>
-                    <p className="my-0 wd-info-color"><i className='fas fa-link fa-fw'></i> {post.contentLink}</p>
+                    <p className="my-0 wd-info-color"><i className='fas fa-link fa-fw'></i>{post.contentLink}</p>
                 </div>
             </div>
         )
@@ -40,7 +40,7 @@ function PostListItem({post = {}}){
                 <div className="col-12 row m-0 p-0">
                     <div className="col-11 p-0">
                         <h6 className="my-1 fw-bold">{post.userName} <i className="fas fa-check-circle"></i><span className="wd-info-color fw-normal"> {post.userHandle} · {post.time}</span></h6>
-                        <p className="m-0">{post.tweet}</p>
+                        <p className="m-0" dangerouslySetInnerHTML={{__html: post.tweet}}></p>
                     </div>
                     <div className="col-1 text-end p-0">
                         <i className="fas fa-ellipsis-h fa-fw wd-info-color"></i>
