@@ -11,8 +11,8 @@ import React from "react"
 import {useSelector} from "react-redux"
 
 function HelloReduxExampleComponent(){
-    const message = useSelector((hello) => {return hello.message});
-    console.log(message);
+    //Use Selector is now returning an array of whatever reducers state finds
+    const message = useSelector((state) => {return state.hello.message});
     return (
         <h3>{message}</h3>
     )
