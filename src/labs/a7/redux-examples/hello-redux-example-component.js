@@ -14,7 +14,7 @@ function HelloReduxExampleComponent(){
     //Use Selector is now returning an array of whatever reducers state finds
     const message = useSelector((state) => {return state.hello.message});
     return (
-        <h3>{message}</h3>
+        <h1>{message}</h1>
     )
 }
 
