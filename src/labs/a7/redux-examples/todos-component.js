@@ -8,7 +8,7 @@
 
 import React, {useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {addTodo, deleteTodo} from "./reducers/todos-reducer";
+import {addTodo, deleteTodo, todoDoneToggle} from "./reducers/todos-reducer";
 
 function Todos(){
     const todos = useSelector((state) =>{return state.todos});
@@ -18,6 +18,7 @@ function Todos(){
 
     //We want to be able to send hte local data to our application storage
     const dispatch = useDispatch();
+
     function createTodoClickHandler(){
         dispatch(addTodo(todo));
     }
@@ -27,6 +28,10 @@ function Todos(){
         dispatch(deleteTodo(index))
     }
     
+    function toggleTodoDone(todo){
+        dispatch(todoDoneToggle(todo))
+    }
+
     function todoChangeHandler(event){
         const doValue = event.target.value; //Grab the value for this input text field
         //Creating a new object with do: doValue, key-value pair
@@ -47,7 +52,7 @@ function Todos(){
                 </li>
                 {
                     todos.map((todo, index) => {
-                        return (<li key={todo._id} className = "list-group-item">{todo.do}<button onClick={() => deleteTodoClickHandler(index)}  className="btn btn-danger float-end ms-2">Delete</button></li>);
+                        return (<li key={todo._id} className = "list-group-item"><input type="checkbox" className="me-2" checked={todo.done} onChange={() => toggleTodoDone(todo)}/>{todo.do}<button onClick={() => deleteTodoClickHandler(index)}  className="btn btn-danger float-end ms-2">Delete</button></li>);
                     })
                 }
             </ul>

@@ -26,8 +26,9 @@ const initialTodos = [
 const todosSlice = createSlice({
     name:'todos',
     initialState: initialTodos,
-    //Here we are now making a reducer function
+    //Here we are now making a reducer function with CRUD operations
     reducers: {
+        //Creation
         addTodo(state, action){
             state.push({
                 _id: (new Date()).getTime(),
@@ -35,12 +36,19 @@ const todosSlice = createSlice({
                 done: false
             });
         },
+        //Deletion
         deleteTodo(state, action){
             const index = action.payload
             state.splice(index,1)
         },
+        //Update
+        todoDoneToggle(state, action){
+            const todo = state.find((todo) => todo._id === action.payload._id)
+            todo.done = !todo.done
+            console.log(todo.done);
+        }
     }
 });
 
-export const {addTodo, deleteTodo} = todosSlice.actions 
+export const {addTodo, deleteTodo, todoDoneToggle} = todosSlice.actions 
 export default todosSlice.reducer
