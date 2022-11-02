@@ -7,13 +7,13 @@
 */
 
 import React from "react";
-import { useSelector } from "react-redux";
+//import { useSelector } from "react-redux";
 
 function ProfileComponent(){
 
     return(
         <div>
-            
+
         </div>
     )
 }
