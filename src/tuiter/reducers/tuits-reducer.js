@@ -37,10 +37,14 @@ const tuitsSlice = createSlice({
             ...templateTuit,
             ...action.payload
           })
+      },
+      deleteTuit(state, action){
+        const index = state.findIndex((tuit) => tuit._id === action.payload);
+        state.splice(index, 1); //Recall we only want to delete one entry
       }
     }
 });
 
 //Exporting all of our new reducers
-export const {createTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
