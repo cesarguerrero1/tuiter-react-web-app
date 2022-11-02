@@ -40,7 +40,7 @@ function NavigationSidebar(){
                         <li className = {`nav-item py-1 px-3 wd-border-bottom ${active === "lists" ? activeClass : ''}`}><Link to="/tuiter/lists" className = "nav-link wd-override-navlink"><i className = "fas fa-list-ul fa-fw"></i><span className = "d-none d-xl-inline"> Lists</span></Link></li>
                         <li className = {`nav-item py-1 px-3 wd-border-bottom ${active === "profile" ? activeClass : ''}`}><Link to="/tuiter/profile" className = "nav-link wd-override-navlink"><i className = "fas fa-user fa-fw"></i><span className = "d-none d-xl-inline"> Profile</span></Link></li>
                         <li className = {`nav-item py-1 px-3 wd-border-bottom ${active === "more" ? activeClass : ''}`}><Link to="/tuiter/more" className = "nav-link wd-override-navlink"><i className = "fas fa-ellipsis-h fa-fw"></i><span  className = "d-none d-xl-inline"> More</span></Link></li>
-                        <li className = "nav-item py-1 px-3"><Link to="/" className = "nav-link wd-override-navlink"><span  className = "d-none d-xl-inline">Labs</span></Link></li>
+                        <li className = "nav-item py-1 px-3"><Link to="/" className = "nav-link wd-override-navlink"><i className = "fas fa-flask fa-fw"></i><span  className = "d-none d-xl-inline"> Labs</span></Link></li>
                     </ul>
                 </nav>
             </div>
