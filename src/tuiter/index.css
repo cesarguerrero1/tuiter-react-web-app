@@ -82,6 +82,17 @@
     padding: 6px;
 }
 
+/* CSS FOR THE HOME COMPONENT*/
+.wd-tuit-input-formatting{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    padding: 6px 18px;
+    background-color: white;
+    color: black;
+}
+
 /* Useful everywhere */
 .wd-user-image{
     border-radius: 100%;

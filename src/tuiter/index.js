@@ -12,7 +12,7 @@ import {Routes, Route} from "react-router";
 
 //Bring in our components
 import NavigationSidebar from "./navigation-sidebar/index.js";
-import TuitComponent from "./TuitsList/index.js"
+import HomeComponent from "./home/index.js";
 import ExploreComponent from "./explore/index.js"
 import WhoToFollowList from "./who-to-follow-list/index.js";
 
@@ -39,13 +39,13 @@ function Tuiter() {
         <Provider store={store}>
             <div className="row my-2">
                 <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar />
+                    <NavigationSidebar/>
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
                     <Routes>
-                        <Route index element={<TuitComponent/>}/>
-                        <Route path="/home" element={<TuitComponent/>}/>
-                        <Route path="/explore" element={<ExploreComponent />}/>
+                        <Route index element={<HomeComponent/>}/>
+                        <Route path="/home" element={<HomeComponent/>}/>
+                        <Route path="/explore" element={<ExploreComponent/>}/>
                     </Routes>
                 </div>
                 <div className="d-none d-lg-block col-lg-4">

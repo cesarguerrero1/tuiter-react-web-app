@@ -19,6 +19,7 @@ function TuitsList() {
     return (
       <div className="wd-post-list-container">
           {tuitsArray.map((tuit) => {
+              console.log(tuitsArray);
               return(<TuitItem key={tuit._id} tuit={tuit}/>);
           })}
       </div>
