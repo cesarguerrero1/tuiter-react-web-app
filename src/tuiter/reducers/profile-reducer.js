@@ -13,12 +13,13 @@ const initialUserInformation = {
     "lastName": "Guerrero",
     "handle": "@Pomonakid",
     "profilePicture": "elonmuskfunny.jpeg",
-    "bannerPicture": "astronaut-visor.jpeg",
+    "bannerPicture": "astronaut-visor-banner.jpeg",
     "bio": "Just taking it one day at a time!",
     "website": "https://github.com/cesarguerrero1",
     "location": "Boston, MA",
-    "dateOfBirth": "1/1/1995",
-    "dataJoined": "11/2022",
+    "dateOfBirth": "1/4/1995",
+    "dateJoined": "November 2022",
+    "tweetCount": 127831,
     "followingCount": 27,
     "followersCount": 1092123
 }

@@ -15,6 +15,7 @@ import NavigationSidebar from "./navigation-sidebar/index.js";
 import HomeComponent from "./home/index.js";
 import ExploreComponent from "./explore/index.js"
 import ProfileComponent from "./profile/index.js"
+import EditProfileComponent from "./profile/edit-profile.js";
 import WhoToFollowList from "./who-to-follow-list/index.js";
 
 //Bring in our CSS
@@ -49,7 +50,8 @@ function Tuiter() {
                         <Route index element={<HomeComponent/>}/>
                         <Route path="/home" element={<HomeComponent/>}/>
                         <Route path="/explore" element={<ExploreComponent/>}/>
-                        <Route path="/profile/*" element={<ProfileComponent/>}/>
+                        <Route path="/profile" element={<ProfileComponent/>}/>
+                        <Route path="/edit-profile" element={<EditProfileComponent/>}/>
                     </Routes>
                 </div>
                 <div className="d-none d-lg-block col-lg-4">

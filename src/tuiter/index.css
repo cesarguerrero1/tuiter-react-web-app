@@ -93,6 +93,34 @@
     color: black;
 }
 
+/* CSS FOR THE PROFILE COMPONENT*/
+.wd-profile-border{
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+}
+
+wd-image-button-container{
+    clear:both;
+    position:relative;
+}
+
+.wd-profile-image-container{
+    position:absolute;
+    left: 16px;
+    bottom: -50px;
+    border-radius:100%;
+    width: 150px;
+    height: 150px;
+}
+
+.btn.wd-edit-profile-btn{
+    color:white;
+    background-color: rgb(29,161,242);
+    border-radius: 25px;
+    padding: 6px 12px;
+}
+
 /* Useful everywhere */
 .wd-user-image{
     border-radius: 100%;
@@ -108,4 +136,8 @@
 
 .wd-info-color{
     color: rgb(110, 118, 125);
+}
+
+.wd-clear-float{
+    clear:both;
 }
