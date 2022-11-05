@@ -41,7 +41,7 @@ function ProfileComponent() {
                       <i className="fas fa-map-marker-alt fa-fw me-1"></i><span>{userData.location}</span>
                   </div>
                   <div className="col-auto wd-info-color ps-0">
-                      <i className="fas fa-birthday-cake fa-fw me-1"></i><span>{userData.dateOfBirth}</span>
+                      <i className="fas fa-birthday-cake fa-fw me-1"></i><span>Born {userData.dateOfBirth}</span>
                   </div>
                   <div className="col-auto wd-info-color ps-0">
                       <i className="fas fa-poll fa-fw me-1"></i><span>Joined {userData.dateJoined}</span>
