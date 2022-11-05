@@ -17,8 +17,8 @@ function ProfileComponent() {
 
   return (
       <div className = "wd-profile-border">
-          <div className="row align-items-center px-3 py-2">
-              <div className="col-1 text-end">
+          <div className="row align-items-center mx-0 my-2 px-3">
+              <div className="col-1 text-center p-0">
                   <i className="fas fa-arrow-left"></i>
               </div>
               <div className="col-11">

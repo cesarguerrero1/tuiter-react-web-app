@@ -100,7 +100,7 @@
     border-color: rgb(47, 51, 54);
 }
 
-wd-image-button-container{
+.wd-image-button-container{
     clear:both;
     position:relative;
 }
@@ -120,6 +120,25 @@ wd-image-button-container{
     border-radius: 25px;
     padding: 6px 12px;
 }
+
+.wd-input-border{
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(47, 51, 54);
+    border-radius:3px;
+}
+
+.wd-input-box{
+    background-color: inherit;
+    border:none;
+    padding:0px;
+    margin:0px;
+}
+
+.wd-edit-date-link{
+    color: rgb(29,161,242);
+}
+
 
 /* Useful everywhere */
 .wd-user-image{
