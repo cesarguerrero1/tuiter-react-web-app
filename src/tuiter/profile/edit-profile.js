@@ -37,8 +37,6 @@ function EditProfile() {
             "website": website,
             "dateOfBirth": dateOfBirth
         }
-        console.log("New User Data");
-        console.log(newUserData);
         dispatch(editProfile(newUserData));
         navigate("../profile");
     }

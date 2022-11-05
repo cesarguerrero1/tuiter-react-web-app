@@ -33,7 +33,6 @@ const profileSlice = createSlice({
         Object.keys(obj).forEach((key) => {
           state[key] = obj[key];
         });
-        console.log(Object.entries(state));
       }
     }
 });
