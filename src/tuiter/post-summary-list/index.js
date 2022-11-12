@@ -22,7 +22,7 @@ function PostSummaryList(){
 
     useEffect(() => {
       dispatch(findTuitsThunk())
-    }, []);
+    }, [dispatch]);
 
     return(
         <div className="row justify-content-center m-0 wd-post-container">

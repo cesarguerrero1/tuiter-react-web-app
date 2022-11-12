@@ -23,7 +23,7 @@ function TuitsList() {
 
     useEffect(() => {
       dispatch(findTuitsThunk())
-    }, []);
+    }, [dispatch]);
 
     //We want to inform the user that we are loading then make it disappear when we have the content
     return (

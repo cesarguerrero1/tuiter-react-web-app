@@ -8,7 +8,8 @@
 
 //We want our react app to make calls to either the Node JS Server we are running OR our remote server
 import axios from "axios";
-const TUITS_API = 'http://localhost:4000/tuits';
+const API_BASE = process.env.REACT_APP_API_BASE;
+const TUITS_API = `${API_BASE}/tuits`;
 
 export const createTuit = async(tuit) =>{
     const response = await axios.post(TUITS_API, tuit);
