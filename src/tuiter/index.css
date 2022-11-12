@@ -160,3 +160,7 @@
 .wd-clear-float{
     clear:both;
 }
+
+.wd-tuit-pointer{
+    cursor: pointer;
+}

@@ -6,21 +6,30 @@
   Assignment 7: Redux
 */
 
-function TuitStats({tuit = { }}) {
+import {useDispatch} from "react-redux"
+import {updateTuitThunk} from "../../services/tuits-thunks.js"
+
+function TuitStats({tuit = {}}) {
+
+    const dispatch = useDispatch();
+
     return (
         <div className="col-12 row my-2">
-            <div className="col-3 wd-info-color">
-                <i className="far fa-comment fa-fw me-2"></i><span>{tuit.replies}</span>
+            <div className="col-auto wd-info-color">
+                <i className="far fa-comment fa-fw me-2 wd-tuit-pointer"></i><span>{tuit.replies}</span>
             </div>
-            <div className="col-3 wd-info-color">
-                <i className="fas fa-retweet fa-fw me-2"></i><span>{tuit.retuits}</span>
+            <div className="col-auto wd-info-color">
+                <i className="fas fa-retweet fa-fw me-2 wd-tuit-pointer"></i><span>{tuit.retuits}</span>
             </div>
-            <div className="col-3 wd-info-color">
-                {tuit.liked ? <i className="fa fa-heart fa-fw me-2 text-danger"></i> : <i className="far fa-heart fa-fw me-2"></i>}<span>{tuit.likes}</span>
+            <div className="col-auto wd-info-color">
+                <i className={tuit.liked ? "fa fa-heart fa-fw me-2 wd-tuit-pointer text-danger" : "fa fa-heart fa-fw me-2 wd-tuit-pointer"} onClick={() => dispatch(updateTuitThunk([tuit, 'likeTuit']))}></i><span>{tuit.likes}</span>
             </div>
-            <div className="col-3 wd-info-color">
-                <i className="fas fa-share fa-fw"></i>
+            <div className="col-auto wd-info-color">
+                <i className={tuit.disliked ?  "fas fa-thumbs-down fa-fw me-2 wd-tuit-pointer" : "far fa-thumbs-down fa-fw me-2 wd-tuit-pointer"} onClick={() => dispatch(updateTuitThunk([tuit, 'dislikeTuit']))}></i><span>{tuit.dislikes}</span>
             </div>
+            <div className="col-auto wd-info-color">
+                <i className="fas fa-share fa-fw wd-tuit-pointer"></i>
+            </div> 
         </div>
     )
 }

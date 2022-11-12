@@ -7,21 +7,31 @@
   (Updated on 11/1/2022 for Assignment 7: Redux)
 */
 
-import React from "react";
-//import postsArray from "./post.json" Getting this from the reducer
+import React, {useEffect} from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+import {findTuitsThunk} from "../../services/tuits-thunks.js";
 import PostSummaryItem from "./post-summary-item.js";
-import {useSelector} from "react-redux";
 
 function PostSummaryList(){
 
     //Get Tuits from the state in the store
-    const postsArray = useSelector((state) => state.tuits);
+    const {tuits, loading} = useSelector((state) => state.tuits);
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+      dispatch(findTuitsThunk())
+    }, []);
 
     return(
         <div className="row justify-content-center m-0 wd-post-container">
-            {postsArray.map((post) => {
-                return (<PostSummaryItem key={post._id} post={post}/>);
-            })}
+            { loading && <div>Loading...</div> }
+            { !loading && 
+                tuits.map((tuit) => {
+                    return (<PostSummaryItem key={tuit._id} post={tuit}/>);
+                })
+            }
         </div>
     )
 }

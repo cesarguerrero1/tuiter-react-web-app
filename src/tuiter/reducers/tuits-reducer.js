@@ -7,44 +7,64 @@
 */
 
 import {createSlice} from "@reduxjs/toolkit"
-import tuits from "../data/tuits.json"
+import { deleteTuitThunk, findTuitsThunk, createTuitThunk, updateTuitThunk } from "../../services/tuits-thunks.js"
 
-//We are baking in some defaults for the person posting a Tuit
-const currentUser={
-    "userName": "NASA",
-    "userHandle": "@nasa",
-    "image": "nasa.jpeg"
-}
+//We ere baking in Tuits but since we are loading from the server we comment this out
 
-//Default Template
-const templateTuit = {
-    "topic": "Space",
-    ...currentUser,
-    "time": "2h",
-    "liked": false,
-    "replies": 0,
-    "retuits": 0,
-    "likes": 0
+const initialState = {
+  tuits: [],
+  loading: false
 }
 
 const tuitsSlice = createSlice({
     name: "tuits",
-    initialState: tuits,
-    reducers:{
-      createTuit(state, action){
-          state.unshift({
-            _id: ((new Date()).getTime()),
-            ...templateTuit,
-            ...action.payload
-          })
+    initialState: initialState,
+
+    //Asynchronous Reducers
+    extraReducers:{
+      //Reducers for finding all Tuits
+      [findTuitsThunk.pending]: (state) => {
+          state.loading = true
+          state.tuits = []
       },
-      deleteTuit(state, action){
-        const index = state.findIndex((tuit) => tuit._id === action.payload);
-        state.splice(index, 1); //Recall we only want to delete one entry
+      [findTuitsThunk.fulfilled]: (state, action) => {
+          state.loading = false
+          state.tuits = action.payload
+      },
+      [findTuitsThunk.rejected]: (state) => {
+          state.loading = false
+      },
+      //Reducers for deleting a given Tuit
+      [deleteTuitThunk.fulfilled]: (state, action) => {
+          state.loading = false
+          //Return only the tuits that do not match our ID
+          state.tuits = state.tuits.filter((tuit) => {return tuit._id !== action.payload})
+      },
+      //Reducers for creating a given Tuit
+      [createTuitThunk.fulfilled]: (state, action) => {
+        state.loading = false;
+        state.tuits.push({
+          ...action.payload
+        })
+      },
+      //Reducers for update a given Tuit
+      [updateTuitThunk.fulfilled]: (state, action) => {
+          const newTuit = action.payload;
+
+          //Find the index!
+          if(action.payload){
+              let index = state.tuits.findIndex((tuit) => {
+                return tuit._id === newTuit._id;
+              });
+
+              state.tuits[index] = {
+                  ...state.tuits[index],
+                  ...newTuit
+              }
+          }
       }
     }
 });
 
 //Exporting all of our new reducers
-export const {createTuit, deleteTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;

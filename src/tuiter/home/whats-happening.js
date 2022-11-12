@@ -7,10 +7,9 @@
 */
 
 import React, {useState} from "react";
-
-//Reducer Imports
-import {createTuit} from "../reducers/tuits-reducer";
 import {useDispatch} from "react-redux";
+
+import {createTuitThunk} from "../../services/tuits-thunks.js";
 
 function WhatsHappening(){
 
@@ -21,14 +20,15 @@ function WhatsHappening(){
     function tuitClickHandler(){
         //We want to stop empty strings from being submitted
         if(whatsHappening){
-            const newTopic = {
+            const newTuit = {
                 "title": whatsHappening.slice(0, (Math.round((whatsHappening.length)*.25))) + "...",
                 "tuit": whatsHappening
             };
     
-            dispatch(createTuit(newTopic));
+            dispatch(createTuitThunk(newTuit));
 
         }
+        setWhatsHappening('');
     }
 
     return(

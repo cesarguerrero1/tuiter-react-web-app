@@ -8,15 +8,15 @@
 
 import TuitStats from "./TuitStats.js";
 import { useDispatch } from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer.js"
+import { deleteTuitThunk } from "../../services/tuits-thunks.js";
 
 function TuitItem({ tuit = {} }) {
 
     const dispatch = useDispatch();
 
     //We use the Tuits ID to find it within the state variable and delete it
-    function deleteTuitHandler(tuit_id) {
-        dispatch(deleteTuit(tuit_id));
+    function deleteTuitHandler(tid) {
+        dispatch(deleteTuitThunk(tid));
     }
 
     return (
@@ -27,7 +27,7 @@ function TuitItem({ tuit = {} }) {
             <div className="col-10 row m-0">
                 <div className="col-12 row m-0 p-0">
                     <div className="col-11 p-0">
-                        <h6 className="my-1 fw-bold">{tuit.userName} <i className="fas fa-check-circle"></i><span className="wd-info-color fw-normal"> {tuit.userHandle} · {tuit.time}</span></h6>
+                        <h6 className="my-1 fw-bold">{tuit.username} <i className="fas fa-check-circle"></i><span className="wd-info-color fw-normal"> {tuit.handle} · {tuit.time}</span></h6>
                         <p className="m-0" dangerouslySetInnerHTML={{ __html: tuit.tuit }}></p>
                     </div>
                     <div className="col-1 text-end p-0">
