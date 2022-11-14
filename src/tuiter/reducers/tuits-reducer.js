@@ -4,6 +4,7 @@
   CS5610
 
   Assignment 7: Redux
+  UPDATED ON 11/13/22 FOR ASSIGNMENT 9 - MONGO
 */
 
 import {createSlice} from "@reduxjs/toolkit"
